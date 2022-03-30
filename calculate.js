@@ -9,23 +9,27 @@
 //     ⇒ Si vous ne donnez pas trois arguments, le programme doit afficher "error" dans la console
 
 
-const calculate = (a, b, c) => {
+const calculate = (n1, n2, op) => {
 
-    switch (c) {
+    switch (op) {
         case "+":
-            return a + b
+            console.log(n1 + n2)
         case "-":
-            return a - b
+            console.log(n1 - n2)
         case "x":
-            return a * b
+            console.log(n1 * n2)
         case "/":
-            return a / b
+            console.log(n1 / n2)
         case "%":
-            return a % b
+            console.log(n1 % n2)
         default:
-            return "error"
+            console.log("Error")
     }
 }
 
-console.log(calculate(20, 4, "/"))
-console.log(calculate(5, 4))
+const parameters = process.argv.slice(2)
+const parameter1 = parseInt(parameters[0])
+const parameter2 = parseInt(parameters[1])
+const parameter3 = parameters[2]
+
+calculate(parameter1, parameter2, parameter3)

@@ -7,16 +7,44 @@
     
 //     ⇒ Si vous ne donnez pas d'argument, le programme doit afficher "error" dans la console
 
-function multiply(number) {
-    
-    for(var i = 1; i <= 10; i++) {
-       var result = number * i
-        console.log(`${number} x ${i} = ${result}`)
+const multiply = (n) => {
+    // const result = 0
+
+    for (var i = 0; i <= 10; i++) {
+        var result = n * i
+        console.log(`${i} x ${n} = ${result}`)
     }
 }
 
-var parameters = process.argv.slice(2)
+multiply()
 
-var parameter = parseInt(paramater[0])
+const args = process.argv.slice(2)
+console.log(parseInt(process.argv[2]))
 
-multiply(parameter1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function multiply(number) {
+    
+//     for(var i = 1; i <= 10; i++) {
+//        var result = number * i
+//         console.log(`${number} x ${i} = ${result}`)
+//     }
+// }
+
+// var parameters = process.argv.slice(2)
+
+// var parameter = parseInt(paramater[0])
+
+// multiply(parameter1)
