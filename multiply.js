@@ -16,11 +16,14 @@ const multiply = (n) => {
     }
 }
 
-multiply()
+const parameters = process.argv.slice(2)
+const parameter = parseInt(parameters[0])
 
-const args = process.argv.slice(2)
-console.log(parseInt(process.argv[2]))
-
+if (parameters.length === 0) {
+  console.log("Error")
+} else {
+  multiply(parameter)
+}
 
 
 
