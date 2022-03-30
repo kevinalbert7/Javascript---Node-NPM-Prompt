@@ -15,7 +15,7 @@ function multiply(number) {
     }
 }
 
-var parameter = process.argv.slice(2)
+var parameters = process.argv.slice(2)
 
 var parameter = parseInt(paramater[0])
 
