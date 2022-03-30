@@ -29,33 +29,3 @@ const calculate = (a, b, c) => {
 
 console.log(calculate(20, 4, "/"))
 console.log(calculate(5, 4))
-
-
-
-
-
-
-
-// function calculate(number1, operator, number2){
-//     var result = "number1" + "operator" + "number2"
-
-//     switch (operator) {
-//         case "+":
-//             result = number1 + number2
-//             break;
-//         case "-":
-//             result = number1 - number2
-//             break;
-//         case "*":
-//             result = number1 * number2
-//             break;
-//         case "/":
-//             result = number1 / number2
-//             break;
-//         case "%":
-//             result = number1 % number2
-//             break;
-//     }
-// }
-
-// console.log(calculate(`${number1} + ${operator} + ${number2}`))
