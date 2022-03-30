@@ -6,6 +6,34 @@
 // - Créer un fichier `index.js` et importez les les fonctions de `table-utils.js`
 // - Affichez la table d'addition et multiplication en executant le fichier `index.js`avec les bons arguments dans le terminal
 
+const multiply = (n) => {
+
+    for (var i = 0; i <= 10; i++) {
+        const result = n * i
+        console.log(`${i} x ${n} = ${result}`)
+    }
+}
+
+const addition = (n) => {
+
+    for (var i = 0; i <= 10; i++) {
+        const result = n + i
+        console.log(`${i} + ${n} = ${result}`)
+    }
+}
+
+module.exports = {
+    multiply,
+    addition
+}
+
+
+
+
+
+
+
+
 function multiply(number) {
     
     for(var i = 1; i <= 10; i++) {

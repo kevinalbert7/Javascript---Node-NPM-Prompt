@@ -1,10 +1,9 @@
-var tableUtils = require("./table-utils")
-
+const tableUtils = require("./table-utils")
 console.log(tableUtils)
 
-var parameters = process.argv.slice(2)
-var paremeter1 = parseInt(parameter[0])
-var parameter2 = parseInt(parameter[1])
+const parameters = process.argv.slice(2)
+const parameter1 = parseInt(parameters[0])
+const parameter2 = parseInt(parameters[1])
 
 tableUtils.multiply(parameter1)
 console.log("")
