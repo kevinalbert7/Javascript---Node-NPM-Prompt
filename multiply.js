@@ -8,7 +8,6 @@
 //     ⇒ Si vous ne donnez pas d'argument, le programme doit afficher "error" dans la console
 
 const multiply = (n) => {
-    // const result = 0
 
     for (var i = 0; i <= 10; i++) {
         var result = n * i
@@ -25,6 +24,7 @@ if (parameters.length === 0) {
   multiply(parameter)
 }
 
+multiply(1)
 
 
 
